@@ -1,24 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Hero from './Hero';
+import Nav from './Nav';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav alignment='flex-end' bgColor='pink' height={75}/>
+      <Hero height={75} overlayColor='rgba(255,255,255,.7)' img='https://source.unsplash.com/random'/>
+      <div style={{height:'100vh'}}></div>
     </div>
   );
 }
